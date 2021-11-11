@@ -1,0 +1,132 @@
+body {
+    margin:0;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+.header {
+    background-color: #263238;
+    margin: 0;
+    padding: 1.5rem 4rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0px;
+    color: #CFD8DC;
+    font-weight: bold;
+}
+
+.header ul {
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+}
+
+.header li {
+    margin-left: 1.5rem;
+}
+
+.header a {
+    color: #CFD8DC;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header a:hover {
+    color: #fff;
+}
+
+
+/* HERO Section */
+
+.hero {
+    background-color: #B0BEC5;
+    margin: 0;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    color: #263238;
+    font-size: 0.8rem;
+}
+
+.hero h1 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.hero p {
+    line-height: 1.3rem;
+}
+
+.hero-inner {
+    max-width: 720px;
+}
+
+.dark-btn {
+    background-color: #263238;
+    color: #CFD8DC;
+    text-decoration: none;
+    /* font-size: 1rem; */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+/* FEATURES Section */
+
+.features {
+    background-color: #e9f3f7;
+    /* display: flex;
+    justify-content: center; */
+    padding: 5rem;
+}
+
+/* 
+Flex-Lösung
+.features-inner {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 900px;
+    
+} */
+
+.features-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    /* grid-template-rows: 50%; */
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.feature-item h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #455A64;
+    font-weight: normal;
+}
+
+.feature-item p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.feature-item {
+    /* width: 300px; */
+    /* padding: 5px; */
+}
+
+/* FOOTER Section */
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: .7rem;
+}
